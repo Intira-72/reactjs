@@ -1,5 +1,8 @@
 const Item = () => {
-    return <li>Traveling Expenses <span>-200</span></li>
+    const name = "Traveling Expenses"
+    const amount = "-200"
+
+    return <li>{name} <span>{amount}</span></li>
 }
 
 export default Item;

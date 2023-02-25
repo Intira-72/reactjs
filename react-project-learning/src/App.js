@@ -8,10 +8,6 @@ const Description = () => {
   return <p>Data Lists</p>
 }
 
-
-
-
-
 function App() {
   return (
     <>      
