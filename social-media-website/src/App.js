@@ -1,21 +1,11 @@
 import './App.css';
 
-const Job = (props) => {
-  return (
-    <div>
-      <h1>{props.position}</h1>
-      <p><b>Company :</b>{props.company}</p>
-      <p><b>Salary :</b>{props.salary}</p>
-    </div>
-  );
-};
-
 function App() {
+  const isGreen = false;
+
   return (
     <div className="App">
-      <Job salary={90000} position="Senior SDE" company="Amazon" />
-      <Job salary={12000} position="Junior SDE" company="Google" />
-      <Job salary={10000} position="Project Manager" company="Netflix" />
+      <h1 style={{ color: isGreen ? "green" : "red" }}>THIS HAS COLOR</h1>
     </div>
   );
 };
