@@ -1,24 +1,32 @@
 import './App.css';
-import User from './User';
-import Planets from './Planets'
+import { useState } from 'react';
 
 function App() {
-  const planets = [
-      {name: "Mars", isGasPlanet: false},
-      {name: "Earth", isGasPlanet: false},
-      {name: "Jupiter", isGasPlanet: true},
-      {name: "Venus", isGasPlanet: false},
-      {name: "Neptune", isGasPlanet: true},
-      {name: "Uranus", isGasPlanet: true},
-  ]
+  const [ showValue, setShowValue ] = useState(true)
+
+  // const [ inputValue, setInputValue ] = useState("")
+
+  // const inputChange = (event) => {
+  //   setInputValue(event.target.value)
+  // }
+
+  // const [ age, setAge ] = useState(0)
+
+  // const increaseAge = () => {
+  //   setAge(age + 1)    
+  // }
 
   return (
-    <div className="App">
-      { planets.map((planet, key) => {
-        return (
-          planet.isGasPlanet ? <Planets name={ planet.name } key={key} /> : null
-        )
-      }) }
+    <div className="App">      
+      <button onClick={() => setShowValue(!showValue)}>SHOW / HIDE</button>
+      {showValue && <h1>HI MY NAME IS MUSE</h1>}
+
+
+      {/* <input type="text" onChange={ inputChange } /> */}
+      
+
+      {/* <h1>{ age }</h1>
+      <button onClick={ increaseAge }>Increase Age</button> */}
     </div>
   );
 };
