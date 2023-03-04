@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [ showValue, setShowValue ] = useState(true)
+  const [ count, setCount ] = useState(0)
 
   // const [ inputValue, setInputValue ] = useState("")
 
@@ -18,8 +18,11 @@ function App() {
 
   return (
     <div className="App">      
-      <button onClick={() => setShowValue(!showValue)}>SHOW / HIDE</button>
-      {showValue && <h1>HI MY NAME IS MUSE</h1>}
+      <h1>{count}</h1>
+
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+      <button onClick={() => setCount(count - 1)}>Decrease</button>
+      <button onClick={() => setCount(0)}>Set to Zero</button>
 
 
       {/* <input type="text" onChange={ inputChange } /> */}
