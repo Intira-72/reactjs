@@ -6,6 +6,12 @@ input {
   margin-right: 10px;
 }
 
+button {
+  margin: 5px;
+  font-size: calc(5px + 2vmin);
+  font-weight: 600;
+}
+
 .App {   
   color: white;
   margin-top: 100px; 
