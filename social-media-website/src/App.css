@@ -2,6 +2,10 @@ body {
   background-color: #282c34;
 }
 
+input {
+  margin-right: 10px;
+}
+
 .App {   
   color: white;
   margin-top: 100px; 
