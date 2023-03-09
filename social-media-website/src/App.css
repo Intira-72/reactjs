@@ -1,25 +1,13 @@
 body {
-  margin: 0;
   background-color: #282c34;
-  color: white;
 }
 
-.App { 
+.App {   
+  color: white;
   margin-top: 100px; 
   text-align: center;
   font-size: calc(10px + 2vmin);
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
-.inputTask, .addButton {
-  margin: 5px; 
-  font-size: calc(10px + 2vmin);
-}
-
-
-.list {
-  margin-left: 150px;
-  text-align: left;
-  
-}
